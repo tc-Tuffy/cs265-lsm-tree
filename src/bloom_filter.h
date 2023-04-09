@@ -5,6 +5,7 @@
 
 class BloomFilter {
    boost::dynamic_bitset<> table;
+   // 三个hash函数，生成对应位图
    uint64_t hash_1(KEY_t) const;
    uint64_t hash_2(KEY_t) const;
    uint64_t hash_3(KEY_t) const;
